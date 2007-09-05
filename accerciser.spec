@@ -1,10 +1,8 @@
 Summary: An interactive Python tool for querying accessibility information
 Name: accerciser
-Version: 0.1.6
+Version: 0.1.92
 Release: %mkrel 1
 Source0: http://download.gnome.org/sources/accerciser/%{name}-%{version}.tar.bz2
-# (fc) 0.1.6-1mdv fix type error in API browser (SVN)
-Patch0: accerciser-0.1.6-fixtype.patch
 License: BSD
 BuildRoot: %{_builddir}/%{name}-%{version}-rpmroot
 Group: Accessibility
@@ -32,7 +30,6 @@ An interactive Python accessibility explorer.
 
 %prep
 %setup -q
-%patch0 -p1 -b .fixtype
 
 %build
 ./configure --prefix=%_prefix --libdir=%_prefix/lib --sysconfdir=%_sysconfdir --disable-scrollkeeper --without-pyreqs
@@ -69,3 +66,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/accerciser/*
 %{_datadir}/icons/hicolor/*/apps/accerciser.*
 %{_datadir}/applications/accerciser.desktop
+%{_mandir}/man1/*
