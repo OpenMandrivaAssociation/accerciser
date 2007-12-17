@@ -4,7 +4,6 @@ Version: 1.1.3
 Release: %mkrel 1
 Source0: http://download.gnome.org/sources/accerciser/%{name}-%{version}.tar.bz2
 License: BSD
-BuildRoot: %{_builddir}/%{name}-%{version}-rpmroot
 Group: Accessibility
 Url: http://live.gnome.org/Accerciser
 
