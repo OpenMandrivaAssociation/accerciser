@@ -1,7 +1,7 @@
 Summary: An interactive Python tool for querying accessibility information
 Name: accerciser
 Version: 1.3.6
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: http://download.gnome.org/sources/accerciser/%{name}-%{version}.tar.bz2
 License: BSD
 BuildRoot: %{_builddir}/%{name}-%{version}-rpmroot
@@ -17,10 +17,10 @@ Requires: gnome-python-desktop >= 2.14
 Requires: pygtk2.0 >= 2.8
 Requires: pygtk2.0-libglade >= 2.8
 Requires: pyorbit >= 2.14
-Requires: at-spi >= 1.7
 Requires: gnome-python >= 2.12
 Requires: gnome-python-bonobo >= 2.12
-Requires: python-at-spi
+Requires: gnome-python-gtksourceview >= 2.12
+Requires: python-at-spi >= 2.23.3
 Requires: ipython
 Obsoletes: at-poke <= 0.2.3
 Provides: at-poke
