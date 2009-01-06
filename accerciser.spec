@@ -1,7 +1,7 @@
 Summary: An interactive Python tool for querying accessibility information
 Name: accerciser
-Version: 1.5.2
-Release: %mkrel 2
+Version: 1.5.4
+Release: %mkrel 1
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 License: BSD
 BuildRoot: %{_builddir}/%{name}-%{version}-rpmroot
