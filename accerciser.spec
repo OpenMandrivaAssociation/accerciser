@@ -1,6 +1,6 @@
 Summary: An interactive Python tool for querying accessibility information
 Name: accerciser
-Version: 3.2.1
+Version: 3.4.1
 Release: 1
 License: BSD
 Group: Accessibility
