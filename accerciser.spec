@@ -2,9 +2,9 @@
 
 Summary:	An interactive Python tool for querying accessibility information
 Name:		accerciser
-Version:	3.4.1
-Release:	2
-Source0:	http://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Version:	3.6.2
+Release:	1
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 License:	BSD
 Group:		Accessibility
 Url:		http://live.gnome.org/Accerciser
@@ -13,9 +13,9 @@ BuildRequires:	pkgconfig(atspi-2) >= 2.1.5
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.1.13
 BuildRequires:	pkgconfig(pygobject-3.0) >= 2.90.3
 BuildRequires:	intltool >= 0.35.0
-BuildRequires:	gnome-doc-utils >= 0.17.3
+BuildRequires:	pkgconfig(gnome-doc-utils) >= 0.17.3
 BuildRequires:	python-devel
-BuildRequires:	GConf2
+BuildRequires:	GConf2 itstool
 
 %description
 An interactive Python accessibility explorer.
@@ -43,4 +43,3 @@ An interactive Python accessibility explorer.
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/*
-
