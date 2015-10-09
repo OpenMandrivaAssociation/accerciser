@@ -16,6 +16,7 @@ BuildRequires:	intltool >= 0.35.0
 BuildRequires:	pkgconfig(gnome-doc-utils) >= 0.17.3
 BuildRequires:	python-devel
 BuildRequires:	itstool
+BuildRequires:	yelp-tools
 
 %description
 An interactive Python accessibility explorer.
