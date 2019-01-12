@@ -41,6 +41,6 @@ An interactive Python accessibility explorer.
 %_datadir/glib-2.0/schemas/org.a11y.Accerciser.gschema.xml
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
-%{_datadir}/icons/HighContrast/*/apps/%{name}.*
+#{_datadir}/icons/HighContrast/*/apps/%{name}.*
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/*
