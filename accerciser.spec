@@ -9,6 +9,7 @@ License:	BSD
 Group:		Accessibility
 Url:		http://live.gnome.org/Accerciser
 BuildArch:	noarch
+BuildRequires:  appstream-util
 BuildRequires:	pkgconfig(atspi-2) >= 2.1.5
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.1.13
 BuildRequires:	pkgconfig(pygobject-3.0) >= 2.90.3
