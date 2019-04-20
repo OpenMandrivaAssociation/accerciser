@@ -2,18 +2,21 @@
 
 Summary:	An interactive Python tool for querying accessibility information
 Name:		accerciser
-Version:	3.31.4
+Version:	3.33.1
 Release:	1
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 License:	BSD
 Group:		Accessibility
 Url:		http://live.gnome.org/Accerciser
 BuildArch:	noarch
+BuildRequires:  pkgconfig(appstream-glib)
+BuildRequires:  appstream-util
 BuildRequires:	pkgconfig(atspi-2) >= 2.1.5
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.1.13
 BuildRequires:	pkgconfig(pygobject-3.0) >= 2.90.3
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	pkgconfig(gnome-doc-utils) >= 0.17.3
+BuildRequires:  pkgconfig(gconf-2.0)
 BuildRequires:	python-devel
 BuildRequires:	itstool
 BuildRequires:	yelp-tools
@@ -25,8 +28,7 @@ An interactive Python accessibility explorer.
 %setup -q
 
 %build
-%configure \
-	--disable-schemas-install
+%configure2_5x --build=%{_host}
 %make_build
 
 %install
@@ -45,4 +47,4 @@ An interactive Python accessibility explorer.
 #{_datadir}/icons/HighContrast/*/apps/%{name}.*
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/*
-%{_datadir}/appdata/accerciser.appdata.xml
+%{_datadir}/metainfo/*.appdata.xml
