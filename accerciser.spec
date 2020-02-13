@@ -2,7 +2,7 @@
 
 Summary:	An interactive Python tool for querying accessibility information
 Name:		accerciser
-Version:	3.34.3
+Version:	3.34.4
 Release:	1
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 License:	BSD
@@ -28,7 +28,7 @@ An interactive Python accessibility explorer.
 %setup -q
 
 %build
-%configure2_5x --build=%{_host}
+%configure --build=%{_host}
 %make_build
 
 %install
