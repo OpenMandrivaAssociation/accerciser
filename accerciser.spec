@@ -20,6 +20,7 @@ BuildRequires:  pkgconfig(gconf-2.0)
 BuildRequires:	python-devel
 BuildRequires:	itstool
 BuildRequires:	yelp-tools
+BuildRequires:  python3dist(ipython)
 
 %description
 An interactive Python accessibility explorer.
