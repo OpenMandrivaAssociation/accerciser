@@ -5,6 +5,8 @@ Name:		accerciser
 Version:	3.39.1
 Release:	1
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+# Missing from 3.39.1 tarball; fixed in upstream git master            
+Source1:        https://gitlab.gnome.org/GNOME/accerciser/-/raw/master/plugins/ipython_view.py
 License:	BSD
 Group:		Accessibility
 Url:		http://live.gnome.org/Accerciser
@@ -26,7 +28,9 @@ BuildRequires:  python3dist(ipython)
 An interactive Python accessibility explorer.
 
 %prep
-%setup -q
+%autosetup -p1
+# Missing from 3.39.1 tarball; fixed in upstream git master            
+cp -a %{S:1} plugins/
 
 %build
 %configure --build=%{_host}
