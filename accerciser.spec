@@ -42,7 +42,7 @@ cp -a %{S:1} plugins/
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc AUTHORS README NEWS 
+%doc AUTHORS README* NEWS 
 %{_bindir}/%{name}
 %{py_puresitedir}/%{name}
 %_datadir/glib-2.0/schemas/org.a11y.Accerciser.gschema.xml
