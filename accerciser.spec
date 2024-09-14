@@ -53,4 +53,4 @@ cp -a %{S:1} plugins/
 #{_datadir}/icons/HighContrast/*/apps/%{name}.*
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/*
-%{_datadir}/metainfo/*.appdata.xml
+#{_datadir}/metainfo/*.appdata.xml
