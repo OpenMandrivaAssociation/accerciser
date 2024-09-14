@@ -50,7 +50,9 @@ cp -a %{S:1} plugins/
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
 %{_datadir}/icons/hicolor/*/apps/%{name}-*
-#{_datadir}/icons/HighContrast/*/apps/%{name}.*
+%{_datadir}/gnome-shell/extensions/accerciser@accerciser.gnome.org/extension.js
+%{_datadir}/gnome-shell/extensions/accerciser@accerciser.gnome.org/metadata.json
+%{_datadir}/metainfo/org.gtk.accerciser.metainfo.xml
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/*
 #{_datadir}/metainfo/*.appdata.xml
