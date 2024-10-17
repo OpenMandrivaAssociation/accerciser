@@ -9,7 +9,7 @@ Source0:	https://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{ve
 Source1:        https://gitlab.gnome.org/GNOME/accerciser/-/raw/master/plugins/ipython_view.py
 License:	BSD
 Group:		Accessibility
-Url:		http://live.gnome.org/Accerciser
+Url:		https://live.gnome.org/Accerciser
 BuildArch:	noarch
 BuildRequires:  meson
 BuildRequires:  pkgconfig(appstream-glib)
