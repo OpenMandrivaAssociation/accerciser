@@ -2,7 +2,7 @@
 
 Summary:	An interactive Python tool for querying accessibility information
 Name:		accerciser
-Version:	3.44.1
+Version:	3.46.2
 Release:	1
 Source0:	https://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 # Missing from 3.39.1 tarball; fixed in upstream git master            
