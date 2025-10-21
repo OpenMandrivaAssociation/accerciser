@@ -2,11 +2,11 @@
 
 Summary:	An interactive Python tool for querying accessibility information
 Name:		accerciser
-Version:	3.46.2
-Release:	3
+Version:	3.48.0
+Release:	1
 Source0:	https://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 # Missing from 3.39.1 tarball; fixed in upstream git master            
-Source1:        https://gitlab.gnome.org/GNOME/accerciser/-/raw/master/plugins/ipython_view.py
+#Source1:        https://gitlab.gnome.org/GNOME/accerciser/-/raw/master/plugins/ipython_view.py
 License:	BSD
 Group:		Accessibility
 Url:		https://live.gnome.org/Accerciser
@@ -31,7 +31,7 @@ An interactive Python accessibility explorer.
 %prep
 %autosetup -p1
 # Missing from 3.39.1 tarball; fixed in upstream git master            
-cp -a %{S:1} plugins/
+#cp -a %{S:1} plugins/
 
 %build
 %meson
