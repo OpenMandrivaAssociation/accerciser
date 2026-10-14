@@ -20,10 +20,10 @@ BuildRequires:	pkgconfig(pygobject-3.0) >= 2.90.3
 BuildRequires:	gettext-devel
 BuildRequires:	pkgconfig(gnome-doc-utils) >= 0.17.3
 BuildRequires:  pkgconfig(gconf-2.0)
-BuildRequires:	python-devel
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	itstool
 BuildRequires:	yelp-tools
-BuildRequires:  python3dist(ipython)
+BuildRequires:  python%{pyver}dist(ipython)
 
 %description
 An interactive Python accessibility explorer.
